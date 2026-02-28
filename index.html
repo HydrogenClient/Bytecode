@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytecode Programming Language</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #eee;
+            padding: 2rem;
+        }
+        h1 {
+            color: #ff4500;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #222;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .download-links {
+            margin-top: 2rem;
+        }
+        .download-links a {
+            display: block;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bytecode Programming Language</h1>
+    <p>
+        Welcome to <strong>Bytecode</strong> — the ultra-hard, stack-based programming language that compiles to bytecode. 
+        Write your programs in .bc files and run them with the Bytecode VM.
+    </p>
+
+    <div class="download-links">
+        <h2>Download Bytecode VM</h2>
+        <a href="https://github.com/HydrogenClient/Bytecode/raw/refs/heads/main/bytecode_vm.exe" download>
+            Windows (.exe)
+        </a>
+        <a href="https://github.com/HydrogenClient/Bytecode/raw/refs/heads/main/bytecode_vm" download>
+            Linux
+        </a>
+    </div>
+
+    <h2>Quick Start Example</h2>
+    <p>Save this as <code>hello.bc</code> and run it with your VM:</p>
+    <pre>
+10 48 19 10 45 19 10 4C 19 10 4C 19 10 4F 19 10 20 19 
+10 57 19 10 4F 19 10 52 19 10 4C 19 10 44 19 10 0A 19
+FF
+    </pre>
+
+    <p>Then run:</p>
+    <pre>
+./bytecode_vm hello.bc      # Linux
+bytecode_vm.exe hello.bc    # Windows
+    </pre>
+
+    <p>Enjoy creating insanely hard programs in Bytecode 😈</p>
+</body>
+</html>
